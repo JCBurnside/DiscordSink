@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="1.0.2" />
+    <PackageReference Include="Serilog" Version="2.6.0" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PackageId>Burnside.Serilog.Sink.Discord</PackageId>
+    <version>1.0.3</version>
+    <authors>Burnside, James C.</authors>
+    <owners>Burnside, James C.</owners>
+    <RepositoryUrl>https://github.com/JCBurnside/DiscordSink</RepositoryUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A serilog sink for discord.  Server/Channel id or names will work but you need register your app with discord.  I am not and have never been assoicated with discord.  This is a fan project.</description>
+    <PackageReleaseNotes>Small Fixes</PackageReleaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <PackageTags>Serilog;Sink</PackageTags> 
+  </PropertyGroup>
+  
+</Project>
