@@ -180,12 +180,12 @@ namespace DiscordSink
     [Flags]
     public enum LoggingLevel
     { 
-        Verbose = 1<<1,
-        Debug = 1<<2,
-        Information = 1<<3,
-        Warning=1<<4,
-        Error = 1<<5,
-        Fatal = 1<<6,
-        All = 1<<7
+        Verbose = 1<<1,     //1
+        Debug = 1<<2,       //2
+        Information = 1<<3, //4
+        Warning=1<<4,       //8
+        Error = 1<<5,       //10
+        Fatal = 1<<6,       //12
+        All = 126,          //126
     }
 }
